@@ -43,8 +43,8 @@ public:
 // Force compiler to instantiate Box<char> even if we don't use it in main
 template class Box<char>;
 
-// Force compiler to instantiate multiply<double> for Box<int>
-template double Box<int>::multiply(double) const;
+// Force compiler to instantiate multiply<double> for Box<float> and Box<float>
+template double Box<float>::multiply(double) const;
 
 // Force compiler to instantiate print<float> for Printer
 template void Printer::print<float>(float) const;
