@@ -104,6 +104,7 @@ void demo_performance() {
 
 	const int N = 50000;
 	std::map<std::string, int, TransparentLess> tmap;
+	//std::map<std::string, int> tmap;
 
 	for (int i = 0; i < N; ++i) tmap["Item" + std::to_string(i)] = i;
 
